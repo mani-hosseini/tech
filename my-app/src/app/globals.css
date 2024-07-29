@@ -1,6 +1,13 @@
+
+@import url('@fortawesome/fontawesome-free/css/all.min.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.clip-ellipse-top {
+  clip-path: polygon(50% 8%, 80% 10%, 100% 14%, 100% 46%, 100% 100%, 60% 100%, 0 100%, 0 47%, 0 13%, 20% 10%);
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
