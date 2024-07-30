@@ -38,3 +38,18 @@ body {
     text-wrap: balance;
   }
 }
+
+.social-icon {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* White icon */
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+}
