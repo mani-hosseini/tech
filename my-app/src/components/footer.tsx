@@ -24,12 +24,14 @@ const Morabbamedium = localFont({
   src:'../../public/fonts/Morabba/woff2/Morabba-Medium.woff2'
 })
 
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import RoomOutlinedIcon from '@mui/icons-material/RoomOutlined';
+import PhoneEnabledOutlinedIcon from '@mui/icons-material/PhoneEnabledOutlined';
+
+
 
 export default function footer() {
   return (
-    <footer className='relative bg-gradient-to-r from-purple-900 to-purple-500 text-white pt-20 pb-10 clip-ellipse-top'>
+    <footer className='relative bg-gradient-to-r from-purple-900 to-purple-500 text-white pt-20 pb-10 clip-ellipse-top mt-80'>
       <div className='container mx-auto px-4'>
         <div className='flex flex-wrap'>
           <div className='w-full md:w-2/5 mb-6 md:mb-0 px-5'>
@@ -149,11 +151,11 @@ export default function footer() {
               <Image src={'/img/footer/Group-30.png'} width={70} height={70} alt='' className='py-4'/>
             </div>
             <p className={`${DanaRegular.className} mb-2 text-sm flex items-center`}>
-              <LocationOnIcon className='text-sm ml-2'/>
+              <RoomOutlinedIcon className='text-sm ml-2'/>
               آدرس : تهران منطقه 18 یافت آباد
             </p>
             <p className={`${DanaRegular.className}mb-2 flex items-center text-sm`}>
-              <PhoneEnabledIcon className='text-sm ml-2'/>
+              <PhoneEnabledOutlinedIcon className='text-sm ml-2'/>
               تلفن: 09109502882 - 09105944090
             </p>
             <div className='flex space-x-3 mt-4 items-center'>
