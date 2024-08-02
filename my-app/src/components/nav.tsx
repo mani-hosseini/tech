@@ -38,7 +38,7 @@ export default function Nav() {
                 <div className={' flex gap-x-8 mr-5'}>
                     <Link className={' text-[15px] transition-all block text-sky-950 '} href={'/'}>صفحه اصلی</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '}
-                          href={'/'}>وبلاگ</Link>
+                          href={'/weblog'}>وبلاگ</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '}
                           href={'/'}>خدمات</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>پروژه
