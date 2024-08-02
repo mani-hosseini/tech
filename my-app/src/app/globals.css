@@ -32,6 +32,83 @@ body {
   }
 }
 
+
+.blog-back1 {
+  background: linear-gradient(to top, rgba(16, 21, 75, 0.9), transparent 75%),
+  url("/img/weblog/753-1970x1103-1-1024x573.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 130px 30px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.blog-back1:hover {
+  background: linear-gradient(to top, rgba(16, 21, 75, 1), transparent 100%),
+  url("/img/weblog/753-1970x1103-1-1024x573.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.blog-back2 {
+  background: linear-gradient(to top, rgba(16, 21, 75, 0.9), transparent 75%),
+  url("/img/weblog/business-people-with-wheelchair-in-the-office-P9M4RX3-1970x2216-1.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 130px 30px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.blog-back2:hover {
+  background: linear-gradient(to top, rgba(16, 21, 75, 1), transparent 100%),
+  url("/img/weblog/business-people-with-wheelchair-in-the-office-P9M4RX3-1970x2216-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+
+.blog-back3 {
+  background: linear-gradient(to top, rgba(16, 21, 75, 0.9), transparent 75%),
+  url("/img/weblog/njanja-kovac-3532-62002-original-protected-1-637x383-1.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 130px 30px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.blog-back3:hover {
+  background: linear-gradient(to top, rgba(16, 21, 75, 1), transparent 100%),
+  url("/img/weblog/njanja-kovac-3532-62002-original-protected-1-637x383-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+
+.blog-back4 {
+  background: linear-gradient(to top, rgba(16, 21, 75, 0.9), transparent 75%),
+  url("/img/weblog/p.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 130px 30px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.blog-back4:hover {
+  background: linear-gradient(to top, rgba(16, 21, 75, 1), transparent 100%),
+  url("/img/weblog/p.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+
+.blog-back5 {
+  background:
+          linear-gradient(to top, rgba(16, 21, 75, 0.9), transparent 75%),
+          url("/img/weblog/post-1.jpg") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.blog-back5:hover {
+  background:
+          linear-gradient(to top, rgba(16, 21, 75, 1), transparent 100%),
+          url("/img/weblog/post-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+
+
 .social-icon {
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
   padding: 0.5rem;
