@@ -35,16 +35,16 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 export default function footer() {
   return (
 <footer className='relative bg-gradient-to-r from-purple-900 to-purple-500 text-white pt-20 pb-10 clip-ellipse-top'>
-  <div className='container mx-auto px-4'>
+  <div className='w-[84%] mx-auto px-4'>
     <div className='flex flex-wrap'>
-      <div className='w-full md:w-2/5 mb-6 md:mb-0 px-4'>
-        <Image src={'./img/footer/footer-logo.svg'} width={200} height={150} alt='' className='py-4 mx-auto'/>
+      <div className='w-full xs:w-2/5 mb-1 xs:mb-69 px-4'>
+        <Image src={'./img/footer/footer-logo.svg'} width={200} height={150} alt='' className='py-4 mx-auto xs:mx-0'/>
         <p className={`mb-4 ${DanaRegular.className} text-justify text-xs mb-2 leading-7`}>
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
         </p>
-        <h4 className={`${DanaBold.className} mb-4 font-bold text-white text-xl`}>عضویت در خبرنامه</h4>
-        <hr className='opacity-15 mb-3'/>
-        <div className="flex items-center justify-center mt-5">
+        <h4 className={`${DanaBold.className} mb-4 font-bold text-white text-xl xs:block hidden`}>عضویت در خبرنامه</h4>
+        <hr className='opacity-15 mb-3 xs:block hidden'/>
+        <div className="flex items-center justify-center mt-5 xs:block hidden">
           <form className="w-full max-w-lg relative">
             <input
               type="email"
@@ -62,7 +62,7 @@ export default function footer() {
           </form>
         </div>
       </div>
-      <div className='w-full md:w-1/5 mb-6 md:mb-0 px-4'>
+      <div className='w-full xs:w-1/5 mb-6 xs:mb-0 xs:px-4 px-4 '>
         <h4 className={`${DanaBold.className} text-white font-bold mb-3 text-xl`}>خدمات ما</h4>
         <hr className='opacity-15 mb-3'/>
         <ul>
@@ -104,7 +104,7 @@ export default function footer() {
           </Link>
         </ul>
       </div>
-      <div className='w-full md:w-1/5 mb-6 md:mb-0 px-4'>
+      <div className='w-full md:w-1/5 mb-6 md:mb-0 xs:px-4 xs:block hidden '>
         <h4 className={`${DanaBold.className} text-white font-bold mb-3 text-xl`}>لینک های مفید</h4>
         <hr className='opacity-15 mb-3'/>
         <ul>
@@ -146,25 +146,25 @@ export default function footer() {
           </Link>
         </ul>
       </div>
-      <div className="w-full md:w-1/5 px-4">
+      <div className="w-full xs:w-1/5 px-4 xs:px-4">
         <h4 className={`${DanaBold.className} text-white font-bold mb-3 text-xl`}>
           اطلاعات تماس
         </h4>
         <hr className="opacity-15 mb-2" />
-        <div className="flex flex-col md:flex-row items-center mb-4">
+        <div className="flex flex-row items-center mb-4 xs:flex-row xs:justify-start">
           <Image
             src={"/img/footer/Group-30.png"}
             width={70}
             height={70}
             alt=""
-            className="py-2 md:py-4 ml-0 md:ml-5"
+            className="py-2 xs:py-4 ml-5"
           />
           <Image
             src={"/img/footer/Group-30.png"}
             width={70}
             height={70}
             alt=""
-            className="py-2 md:py-4"
+            className="py-2 xs:py-4"
           />
         </div>
         <p className={`${DanaMedium.className} mb-2 text-sm flex items-center`}>
@@ -172,10 +172,10 @@ export default function footer() {
           آدرس : تهران منطقه 18 یافت آباد
         </p>
         <p className={`${DanaRegular.className} mb-2 flex items-center text-xs`}>
-          <PhoneEnabledOutlinedIcon className="text-sm ml-1" />
+          <PhoneEnabledOutlinedIcon className="text-sm ml-1 justify-center" />
           تلفن: 09109502882 - 09105944090
         </p>
-        <div className="flex space-x-3 mt-4 items-center justify-center md:justify-start">
+        <div className="flex space-x-3 mt-4 items-center">
           <div className="social-icon ml-3">
             <Link href={"/"} className="text-white">
               <FacebookOutlinedIcon className="text-lg" />
