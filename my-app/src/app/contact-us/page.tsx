@@ -188,6 +188,10 @@ const page: React.FC = () => {
           </div>
         </div>
         {/* section img*/}
+        <div className="w-1/2 w-max mr-[120px]">
+          <Image src={'/img/contact-us/Mask-Group-13.png'} width={500} height={500} alt="" className=" flex items-center justify-center"/>
+          
+        </div>
       </div>
     </section>
   );
