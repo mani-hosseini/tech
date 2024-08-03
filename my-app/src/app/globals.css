@@ -124,3 +124,29 @@ body {
 .social-icon:hover {
   background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
 }
+
+@layer components {
+  .overlay {
+    @apply fixed inset-0 invisible opacity-0 w-full h-full z-10 bg-black/80 md:hidden;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .overlay--visible {
+    @apply visible opacity-100;
+  }
+
+  .nav {
+    @apply fixed top-0 bottom-0 right-0 bg-white w-[304px] min-h-screen z-20 pt-3 mb-6 px-4;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  }
+
+  .nav--visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.placeholder-small::placeholder {
+  font-size: 12px;
+}
