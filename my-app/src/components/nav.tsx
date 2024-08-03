@@ -1,5 +1,5 @@
-"use client";
 
+"use client"
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -115,7 +115,7 @@ export default function Nav() {
                         ها</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>درباره
                         ما</Link>
-                    <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>تماس
+                    <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/contact-us'}>تماس
                         با ما</Link>
                 </div>
             </section>

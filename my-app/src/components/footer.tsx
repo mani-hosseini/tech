@@ -44,7 +44,7 @@ export default function footer() {
         </p>
         <h4 className={`${DanaBold.className} mb-4 font-bold text-white text-xl xs:block hidden`}>عضویت در خبرنامه</h4>
         <hr className='opacity-15 mb-3 xs:block hidden'/>
-        <div className="flex items-center justify-center mt-5 xs:block hidden">
+        <div className=" items-center justify-center mt-5 xs:block hidden">
           <form className="w-full max-w-lg relative">
             <input
               type="email"
