@@ -81,7 +81,7 @@ export default function Nav() {
                                         href={'/weblog'}>وبلاگ</Link>
                                     <Link
                                         className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 my-6'}
-                                        href={'/'}>خدمات</Link>
+                                        href={'/services'}>خدمات</Link>
                                     <Link
                                         className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 my-6'}
                                         href={'/'}>پروژه
@@ -110,7 +110,7 @@ export default function Nav() {
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '}
                           href={'/weblog'}>وبلاگ</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '}
-                          href={'/'}>خدمات</Link>
+                          href={'/services'}>خدمات</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>پروژه
                         ها</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>درباره
