@@ -33,28 +33,28 @@ const services = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از...",
     image: "/img/services/9.webp",
-    link: "/project-request",
+    link: "/services//Speed-optimization",
   },
   {
     title: "سئو و بهینه سازی سایت",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از...",
     image: "/img/services/images.jpg",
-    link: "/project-request",
+    link: "/services/SEO-and-ite-optimization",
   },
   {
     title: "تبلیغات کلیکی",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از...",
     image: "/img/services/PPC-marketing.webp",
-    link: "/project-request",
+    link: "/services/Click-Advertising",
   },
   {
     title: "بازاریابی محتوا",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از...",
     image: "/img/services/20161019052135-Content-Marketing-1024x683.jpeg",
-    link: "/project-request",
+    link: "/services/marketing",
   },
 ];
 

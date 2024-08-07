@@ -32,28 +32,28 @@ const services = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است...",
     image: "/img/services/DSCF3903-scaled-2-1024x683.webp",
-    link: "/project-request",
+    link: "/services/website-design-wordpress",
   },
   {
     title: "طراحی اپلیکیشن موبایل",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است...",
     image: "/img/services/download.jpg",
-    link: "/project-request",
+    link: "/services/Mobile-application-design",
   },
   {
     title: "طراحی سایت اختصاصی",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است...",
     image: "/img/services/how-to-design-mobile-app-ui-like-a-professional.webp",
-    link: "/project-request",
+    link: "/services/Exclusive-website-design",
   },
   {
     title: "پشتیبانی وبسایت شما",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است...",
     image: "/img/services/ZGM_FrontEndBackEndDev-955x500-1.webp",
-    link: "/project-request",
+    link: "/services/Support-your-website",
   },
 ];
 
