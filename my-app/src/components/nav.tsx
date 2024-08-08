@@ -1,4 +1,3 @@
-
 "use client"
 import React, {useState} from 'react';
 import Link from 'next/link';
@@ -88,7 +87,7 @@ export default function Nav() {
                                         ها</Link>
                                     <Link
                                         className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 my-6'}
-                                        href={'/'}>درباره
+                                        href={'/about'}>درباره
                                         ما</Link>
                                     <Link
                                         className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 my-6'}
@@ -113,9 +112,10 @@ export default function Nav() {
                           href={'/services'}>خدمات</Link>
                     <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>پروژه
                         ها</Link>
-                    <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/'}>درباره
+                    <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/about'}>درباره
                         ما</Link>
-                    <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '} href={'/contact-us'}>تماس
+                    <Link className={' text-[15px] transition-all block text-gray-500 hover:text-sky-950 '}
+                          href={'/contact-us'}>تماس
                         با ما</Link>
                 </div>
             </section>

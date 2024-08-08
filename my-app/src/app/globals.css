@@ -108,7 +108,20 @@ body {
           url("/img/weblog/post-1.jpg") no-repeat center center;
   background-size: cover;
 }
+.blog-back6 {
+  background:
+          linear-gradient(to top, rgba(46, 55, 145, 0.9), transparent 60%),
+          url("/img/weblog/post-1.jpg") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
 
+.blog-back6:hover {
+  background:
+          linear-gradient(to top, rgba(16, 21, 75, 1), transparent 100%),
+          url("/img/weblog/post-1.jpg") no-repeat center center;
+  background-size: cover;
+}
 
 
 .social-icon {
