@@ -39,7 +39,7 @@ export default function footer() {
         <div className="flex flex-wrap">
           <div className="w-full xs:w-2/5 mb-1 xs:mb-69 px-4">
             <Image
-              src={"./img/footer/footer-logo.svg"}
+              src={"/img/footer/footer-logo.svg"}
               width={200}
               height={150}
               alt=""
