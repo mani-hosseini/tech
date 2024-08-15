@@ -11,23 +11,23 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import localFont from "next/font/local";
 
 const MorabbaLight = localFont({
-  src: "../../public/fonts/Morabba/woff2/Morabba-Light.woff2",
+  src: "../../../public/fonts/Morabba/woff2/Morabba-Light.woff2",
 });
 
 const DanaRegular = localFont({
-  src: "../../public/fonts/Dana/woff2/DanaFaNum-Regular.woff2",
+  src: "../../../public/fonts/Dana/woff2/DanaFaNum-Regular.woff2",
 });
 
 const DanaBold = localFont({
-  src: "../../public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2",
+  src: "../../../public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2",
 });
 
 const DanaMedium = localFont({
-  src: "../../public/fonts/Dana/woff2/DanaFaNum-Medium.woff2",
+  src: "../../../public/fonts/Dana/woff2/DanaFaNum-Medium.woff2",
 });
 
 const Morabbamedium = localFont({
-  src: "../../public/fonts/Morabba/woff2/Morabba-Medium.woff2",
+  src: "../../../public/fonts/Morabba/woff2/Morabba-Medium.woff2",
 });
 
 export default function BodyServise({ product }) {
@@ -37,10 +37,10 @@ export default function BodyServise({ product }) {
       {/* عرض xs:w-[84%] */}
       <Image
         src={product.img}
-        width={800}
-        height={100}
+        width={1000}
+        height={1100}
         alt=""
-        className="w-full h-[240px] sm:h-[300px] md:h-[380px] lg:h-[480px] rounded-2xl align-middle object-cover object-center mb-4"
+        className="sm:h-[300px] md:h-[380px] lg:h-[480px] rounded-2xl align-middle object-cover object-center mb-4"
       />
       <div className="flex flex-row items-start justify-between">
         <div className="flex items-center mb-4 xs:mb-0">
@@ -68,7 +68,7 @@ export default function BodyServise({ product }) {
       </div>
       <hr className="mt-2 opacity-80" />
       <h1
-        className={`${DanaBold.className} mt-5 text-[#5E71FF] text-[19px] mb-5`}
+        className={`${DanaBold.className} mt-5 text-[#5E71FF] text-[16px] mb-5`}
       >
         {product.title}
       </h1>

@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
+import WestIcon from "@mui/icons-material/West";
 
 import localFont from "next/font/local";
 const MorabbaLight = localFont({
@@ -29,48 +32,56 @@ const products = [
     title: "طراحی پلتفرم کتاب و کتابخوانی تحت وب",
     category: "شرکتی",
     img: "/img/project/Mask-Group-37-860x684-1.jpg",
+    link: '/projects/Designing-a-webbook-and-reading-platform',
   },
   {
     id: 2,
     title: "طراحی سایت شرکتی، صنعتی با قابلیت فرم...",
     category: "شرکتی",
     img: "/img/project/Mask-Group-31-860x684-1.jpg",
+    link: '/projects/Corporate-industrial-site-design-with-form-capability',
   },
   {
     id: 3,
     title: "طراحی وب اپلیکیشن برای ارائه خدمات...",
     category: "خلاقانه",
     img: "/img/project/Mask-Group-34-860x684-1.jpg",
+    link: '/projects/Web-application-design-to-provide-services',
   },
   {
     id: 4,
     title: "طراحی وبسایت فروشگاهی ابزارآلات ساختمانی",
     category: "فروشگاهی",
     img: "/img/project/Mask-Group-33-860x684-1.jpg",
+    link: '/projects/Website-design-for-construction-tools-store',
   },
   {
     id: 5,
     title: "طراحی وبسایت فروشگاهی در زمینه فروش لباس",
     category: "فروشگاهی",
     img: "/img/project/Mask-Group-30-860x762-1.jpg",
+    link: '/projects/website-in-the-field-of-clothing-sales',
   },
   {
     id: 6,
     title: "طراحی سایت شرکتی با قابلیت مشاوره آنلاین",
     category: "شرکتی",
     img: "/img/project/Mask-Group-35-860x762-1.jpg",
+    link: '/projects/Company-website-design-with-online-consulting-capability',
   },
   {
     id: 7,
     title: "طراحی وبسایت موزیک با قابلیت پخش آنلاین",
     category: "مجله ای",
     img: "/img/project/5c2b29031110ec6855051b37_scene_generator_psd_objects_freebie_ohmy_cover-860x762-1.jpg",
+    link: '/projects/Music-website-design-with-online-playback-capability',
   },
   {
     id: 8,
     title: "طراحی سایت فروشگاهی لباس های بچگانه",
     category: "فروشگاهی",
     img: "/img/project/Mask-Group-36-860x762-1.jpg",
+    link: '/projects/Childrens-clothing-store-website-design',
   },
 ];
 
@@ -110,19 +121,25 @@ export default function BodyProjects() {
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-start"
+            className="bg-white shadow-lg rounded-2xl p-4 flex flex-col items-start"
           >
             <Image
               src={product.img}
               alt={product.title}
               width={200}
               height={200}
-              className="rounded-lg mb-4 w-full"
+              className="rounded-lg mb-4 w-full h-[220px]"
             />
-            <h2 className={`text-sm mb-2 ${DanaRegular.className}`}>
+            <h2 className={`text-sm mb-2  ${DanaMedium.className}`}>
               {product.title}
             </h2>
             <span>{product.category}</span>
+            <Link href={product.link}>
+              <span className={`${DanaRegular.className} text-xs text-gray-700`}>
+                مشاهده جزئیـات
+                <WestIcon className="text-sm mr-1" />
+              </span>
+            </Link>
           </div>
         ))}
       </div>
