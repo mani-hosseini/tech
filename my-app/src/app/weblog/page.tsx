@@ -70,7 +70,7 @@ export default function Weblogpage() {
                                 <div><Cart className={'text-sm'}/> designer</div>
                                 <div><Com className={'text-sm'}/> 0</div>
                             </div>
-                            <Link href={''} className={'text-base tracking-tighter'}>مواردی که قبل از طراحی سایت باید
+                            <Link href={'/weblog/Ui-Ux'} className={'text-base tracking-tighter'}>مواردی که قبل از طراحی سایت باید
                                 بدانید !</Link>
                         </div>
                         <div
@@ -79,7 +79,7 @@ export default function Weblogpage() {
                                 <div><Cart className={'text-sm'}/> designer</div>
                                 <div><Com className={'text-sm'}/> 0</div>
                             </div>
-                            <Link href={''} className={'text-base tracking-tighter'}>چند نکته برای لینک سازی داخلی که در
+                            <Link href={'/weblog/projocts'} className={'text-base tracking-tighter'}>چند نکته برای لینک سازی داخلی که در
                                 افزایش رتبه سایت شما جادو میکند !</Link>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Weblogpage() {
                                 <div><Cart className={'text-sm'}/> designer</div>
                                 <div><Com className={'text-sm'}/> 0</div>
                             </div>
-                            <Link href={''} className={'text-base tracking-tighter'}>معرفی 5 ایده طراحی سایت</Link>
+                            <Link href={'/weblog/links'} className={'text-base tracking-tighter'}>معرفی 5 ایده طراحی سایت</Link>
                         </div>
                         <div
                             className={'flex flex-col items-center justify-end py-4 xs:w-[347px] xs:h-[200px] w-full h-[150px] xs:m-0 mb-3 rounded-xl blog-back4 text-white'}>
@@ -98,7 +98,7 @@ export default function Weblogpage() {
                                 <div><Cart className={'text-sm'}/> designer</div>
                                 <div><Com className={'text-sm'}/> 0</div>
                             </div>
-                            <Link href={''} className={'text-base tracking-tighter'}>چجوری از برنامه نویسی پول در
+                            <Link href={'/weblog/build-site'} className={'text-base tracking-tighter'}>چجوری از برنامه نویسی پول در
                                 بیاریم</Link>
                         </div>
                         <div
@@ -107,7 +107,7 @@ export default function Weblogpage() {
                                 <div><Cart className={'text-sm'}/> designer</div>
                                 <div><Com className={'text-sm'}/> 0</div>
                             </div>
-                            <Link href={''} className={'text-base tracking-tighter'}>سالادی که هندی ها دوست دارند
+                            <Link href={'/weblog/back-links'} className={'text-base tracking-tighter'}>سالادی که هندی ها دوست دارند
                                 !</Link>
                         </div>
                     </div>
