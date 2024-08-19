@@ -16,7 +16,10 @@
     "@mui/material": "^5.16.5",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-18-image-lightbox": "^5.1.4",
+    "react-dom": "^18",
+    "swiper": "^11.1.9",
+    "yet-another-react-lightbox": "^3.21.4"
   },
   "devDependencies": {
     "@types/node": "^20",

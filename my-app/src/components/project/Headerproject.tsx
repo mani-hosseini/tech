@@ -46,7 +46,7 @@ export default function Headerproject({ product }) {
           <div className={`overflow-hidden whitespace-nowrap text-ellipsis w-[150px] ${DanaMedium.className} text-sm mr-2 text-gray-600`}>
             {product.title}
           </div>
-          <div className={`absolute hidden group-hover:block bg-black  p-2  w-max left-[100px] top-full mt-1 ${DanaMedium.className} text-[10px] mr-2 text-gray-300`}>
+          <div className={`absolute hidden group-hover:block bg-black py-1 px-2  w-max left-[110px] top-full mt-1 ${DanaMedium.className} text-[10px] mr-2 text-gray-300`}>
             {product.title}
           </div>
         </div>

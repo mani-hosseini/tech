@@ -3,6 +3,9 @@ import React from "react";
 
 import Headerproject from "@/components/project/Headerproject";
 import BodyProjectInside from "@/components/project/BodyProjectInside";
+import Comments from "@/components/Comments";
+import ContectBoxProject from "@/components/project/ContectBoxProject";
+
 
 const products = [
   {
@@ -13,6 +16,8 @@ const products = [
     dateStart: "7 / 7 / 1399",
     price: "17,000,000 تومان",
     dateFinish: "25 روز کاری",
+    link: '/projects/website-in-the-field-of-clothing-sales',
+    data: ['Html','Css','Php','Laravel','bootstrap'],
   },
 ];
 
@@ -31,9 +36,16 @@ export default function page() {
         </div>
 
         <div className=" xs:w-1/4 w-full xs:mt-0 mt-5">
-          ddddd
+          {products.map((product, index) => (
+            <ContectBoxProject key={index} product={product}/>
+          ))}
         </div>
       </div>
+
+      <div className="w-full bg-white px-4 py-2 border border-[#b5b1b12e] rounded-2xl mt-10 mb-5">
+          <Comments/>
+      </div>
+
     </div>
   );
 }

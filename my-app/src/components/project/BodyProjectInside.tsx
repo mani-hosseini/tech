@@ -1,7 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
@@ -9,6 +12,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import localFont from "next/font/local";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 const MorabbaLight = localFont({
   src: "../../../public/fonts/Morabba/woff2/Morabba-Light.woff2",
@@ -30,11 +34,28 @@ const Morabbamedium = localFont({
   src: "../../../public/fonts/Morabba/woff2/Morabba-Medium.woff2",
 });
 
-export default function BodyServise({ product }) {
+const images = [
+  {
+    img: "/img/project/5c2b29031110ec6855051b37_scene_generator_psd_objects_freebie_ohmy_cover-860x762-1.jpg",
+  },
+  { img: "/img/project/Mask-Group-31-860x684-1.jpg" },
+  { img: "/img/project/Mask-Group-33-860x684-1.jpg" },
+  { img: "/img/project/Mask-Group-34-860x684-1.jpg" },
+  { img: "/img/project/Mask-Group-37-860x684-1.jpg" },
+  { img: "/img/project/Mask-Group-36-860x762-1.jpg" },
+];
+
+export default function BodyService({ product }) {
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openLightbox = (index) => {
+    setPhotoIndex(index);
+    setIsOpen(true);
+  };
+
   return (
     <div className="py-2 px-6">
-      {" "}
-      {/* عرض xs:w-[84%] */}
       <Image
         src={product.img}
         width={1000}
@@ -67,6 +88,41 @@ export default function BodyServise({ product }) {
         </div>
       </div>
       <hr className="mt-2 opacity-80" />
+      <div className="mt-5 flex flex-col items-center mb-10">
+        <h2 className={`${DanaMedium.className} text-blue-500 text-sm`}>
+          گالری تصاویر پروژه
+        </h2>
+        <div className="flex items-start xs:flex-nowrap flex-wrap mt-4 mr-4">
+          {images.map((product, index) => (
+            <div
+              key={index}
+              className="relative inline-block cursor-pointer"
+              onClick={() => openLightbox(index)}
+            >
+              <Image
+                src={product.img}
+                width={120}
+                height={120}
+                alt=""
+                className="rounded-lg ml-4 h-[105px] object-cover mr-4 xs:mr-0 mt-4 xs:mt-0"
+              />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white w-[40px]"><AddCircleIcon/></span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {isOpen && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images.map(image => ({ src: image.img }))}
+            index={photoIndex}
+            onSlideChange={(index) => setPhotoIndex(index)}
+          />
+        )}
+      </div>
       <h1
         className={`${DanaBold.className} mt-5 text-[#5E71FF] text-[16px] mb-5`}
       >
@@ -77,15 +133,27 @@ export default function BodyServise({ product }) {
       >
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
-        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
-        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
-        نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-        خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
-        داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
-        رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
-        پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در
+        شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+        طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+        الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت
+        می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت
+        تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+        جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+        گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+        ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در
+        شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+        طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+        الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت
+        می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت
+        تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+        جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+        گیرد.
       </p>
     </div>
   );
 }
+
