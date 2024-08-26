@@ -122,39 +122,41 @@ export default function page() {
                     </p>
                 </div>
                 {/* 20% */}
-                <div className={' w-[22%] sticky top-[20%]'}>
-                    <div className={'bg-white rounded-md shadow-cyan-100 p-4 w-full border border-r-gray-200'}>
-                        <h5 className={`text-[13px]`}>آنچه در این مطلب میخوانید !</h5>
-                        <Link href={'/'}
-                              className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-3 transition-all'}>استراتژی
-                            لینک سازی خارجی چیست؟</Link>
-                        <Link href={'/'}
-                              className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>تنظیم
-                            استراتژی لینک سازی خارجی</Link>
-                        <Link href={'/'}
-                              className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۱-
-                            محتوای یونیک و منحصربه‌فرد تولید کنید</Link>
-                        <Link href={'/'}
-                              className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۲-
-                            شبکه‌سازی کنید</Link>
-                        <Link href={'/'}
-                              className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۳-
-                            پست مهمان بنویسید</Link>
-                        <Link href={'/'}
-                              className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۴-
-                            رپورتاژ آگهی منتشر کنید</Link>
-                    </div>
-                    <div className={'bg-white rounded-md shadow-cyan-100 w-full border border-r-gray-200 mt-8'}>
-                        <Image src={'/img/services/DSCF3903-scaled-2-1024x683.webp'} className={'w-full rounded-t-md'}
-                               width={10000} height={10000} alt='Logo'></Image>
-                        <div className={'w-[90%] bg-white relative shadow-cyan-100 p-3 rounded-b-md'}>
-                            <h4>طراحی وبسایت وردپرس</h4>
-                            <p className={'text-[12px] text-gray-400 mt-1 line-clamp-2 text-justify'}>لورم ایپسوم متن ساختگی
-                                با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است...</p>
-                            <Link href={'/'} className='text-[#5e71ff] inline-flex items-center mt-2 text-xs'>
-                                <span>مشاهده بیشتر</span>
-                                <TrendingFlatOutlinedIcon className='rotate-180'/>
-                            </Link>
+                <div className={' w-[22%] '}>
+                    <div className={'sticky top-2'}>
+                        <div className={'bg-white rounded-md shadow-cyan-100 p-4 w-full border border-r-gray-200'}>
+                            <h5 className={`text-[13px]`}>آنچه در این مطلب میخوانید !</h5>
+                            <Link href={'/'}
+                                  className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-3 transition-all'}>استراتژی
+                                لینک سازی خارجی چیست؟</Link>
+                            <Link href={'/'}
+                                  className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>تنظیم
+                                استراتژی لینک سازی خارجی</Link>
+                            <Link href={'/'}
+                                  className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۱-
+                                محتوای یونیک و منحصربه‌فرد تولید کنید</Link>
+                            <Link href={'/'}
+                                  className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۲-
+                                شبکه‌سازی کنید</Link>
+                            <Link href={'/'}
+                                  className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۳-
+                                پست مهمان بنویسید</Link>
+                            <Link href={'/'}
+                                  className={'text-[13px] text-gray-400 hover:text-[#5E71FF] inline-block mt-2 transition-all'}>۴-
+                                رپورتاژ آگهی منتشر کنید</Link>
+                        </div>
+                        <div className={'bg-white rounded-md shadow-cyan-100 w-full border border-r-gray-200 mt-8'}>
+                            <Image src={'/img/services/DSCF3903-scaled-2-1024x683.webp'} className={'w-full rounded-t-md'}
+                                   width={10000} height={10000} alt='Logo'></Image>
+                            <div className={'w-[90%] bg-white relative shadow-cyan-100 p-3 rounded-b-md'}>
+                                <h4>طراحی وبسایت وردپرس</h4>
+                                <p className={'text-[12px] text-gray-400 mt-1 line-clamp-2 text-justify'}>لورم ایپسوم متن ساختگی
+                                    با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است...</p>
+                                <Link href={'/'} className='text-[#5e71ff] inline-flex items-center mt-2 text-xs'>
+                                    <span>مشاهده بیشتر</span>
+                                    <TrendingFlatOutlinedIcon className='rotate-180'/>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -55,34 +55,7 @@ const products = [
     img: "/img/project/Mask-Group-33-860x684-1.jpg",
     link: '/projects/Website-design-for-construction-tools-store',
   },
-  {
-    id: 5,
-    title: "طراحی وبسایت فروشگاهی در زمینه فروش لباس",
-    category: "فروشگاهی",
-    img: "/img/project/Mask-Group-30-860x762-1.jpg",
-    link: '/projects/website-in-the-field-of-clothing-sales',
-  },
-  {
-    id: 6,
-    title: "طراحی سایت شرکتی با قابلیت مشاوره آنلاین",
-    category: "شرکتی",
-    img: "/img/project/Mask-Group-35-860x762-1.jpg",
-    link: '/projects/Company-website-design-with-online-consulting-capability',
-  },
-  {
-    id: 7,
-    title: "طراحی وبسایت موزیک با قابلیت پخش آنلاین",
-    category: "مجله ای",
-    img: "/img/project/5c2b29031110ec6855051b37_scene_generator_psd_objects_freebie_ohmy_cover-860x762-1.jpg",
-    link: '/projects/Music-website-design-with-online-playback-capability',
-  },
-  {
-    id: 8,
-    title: "طراحی سایت فروشگاهی لباس های بچگانه",
-    category: "فروشگاهی",
-    img: "/img/project/Mask-Group-36-860x762-1.jpg",
-    link: '/projects/Childrens-clothing-store-website-design',
-  },
+
 ];
 
 export default function BodyProjects() {

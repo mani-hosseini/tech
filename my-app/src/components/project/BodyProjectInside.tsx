@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
