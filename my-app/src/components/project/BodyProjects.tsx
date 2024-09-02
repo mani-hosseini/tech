@@ -95,6 +95,25 @@ export default function BodyProjects() {
 
   return (
     <div className="container mx-auto p-4">
+            <div className="flex justify-center space-x-reverse mb-4">
+        {["همه نمونه کارها", "شرکتی", "فروشگاهی", "خلاقانه", "مجله ای"].map(
+          (category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`${
+                DanaRegular.className
+              } ml-3 text-[12px] border border-pink-300 py-1 px-2 text-gray-500 rounded-md hover:text-blue-400 font-bold ${
+                selectedCategory === category
+                  ? "text-blue-800"
+                  : "text-gray-500"
+              }`}
+            >
+              {category}
+            </button>
+          )
+        )}
+      </div>
       {/* Product grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {filteredProducts.map((product) => (

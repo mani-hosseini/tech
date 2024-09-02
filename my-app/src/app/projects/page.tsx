@@ -3,7 +3,7 @@ import React from "react";
 import BodyProjects from "@/components/project/BodyProjects";
 
 import localFont from "next/font/local";
-import Tittleprjocts from "@/components/project/Tittleprjocts";
+
 const MorabbaLight = localFont({
   src: "../../../public/fonts/Morabba/woff2/Morabba-Light.woff2",
 });
@@ -34,7 +34,6 @@ export default function page() {
         <h1 className={`${DanaRegular.className} text-xl font-bold`}>
           برخی از نمونه کارهای ما
         </h1>
-        <Tittleprjocts/>
         <BodyProjects/>
       </div>
     </section>

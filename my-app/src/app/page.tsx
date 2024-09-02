@@ -28,100 +28,134 @@ const Morabbamedium = localFont({
 export default function page() {
     return (
         <div className={` ${DanaMedium.className} xs:w-[84%] w-[91%]  m-auto `}>
-            <section className={'xs:flex gap-x-10 justify-between items-center'}>
+            <section className="flex flex-col xs:flex-row gap-x-10 justify-between items-center">
                 {/* tittle */}
-                <div className={'xs:w-[50%] w-full'}>
-                    <h4 className={`text-sky-950 xs:text-[32px] text-[22px] ${DanaBold.className} tracking-tight`}>ما
-                        رویاهای شما عزیزان</h4>
-                    <h4 className={`text-sky-950 xs:text-[32px] text-[22px] ${DanaBold.className} tracking-tight`}>را
-                        خلق و به <span className={'text-blue-600'}>واقعـیت</span> تبدیل میکنیم</h4>
-                    <p className={'text-gray-400 xs:text-[14px] text-[11px] mt-4 mb-6 xs:leading-8 leading-5 text-justify'}>لورم
-                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
-                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                        نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد
-                        گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
-                        برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
-                        صورت می توان امید داشت که تمام و دشواری موجود است.</p>
-                    <div className={'flex items-center gap-x-6'}>
-                        <Link href={'/'}
-                              className={' bg-gradient-to-br from-purple-600 to-blue-400 text-white xs:px-6 px-3 rounded-xl py-2 text-[13px]'}>مشاهده
-                            خدمات</Link>
-                        <div className={'flex items-center gap-x-2'}>
-                            <Image src={'/img/about/Play.png'} className='xs:w-[40px] w-[20px] xs:h-[40px] h-[20px]'
-                                   width={1000} height={1000} alt='Logo'/>
-                            <Link href={''}
-                                  className={`xs:text-[14px] text-[11px] ${DanaBold.className} border-b-2 border-b-sky-600`}>ویدیو
-                                معرفی</Link>
+                <div className="xs:w-[50%] w-full">
+                    <h4 className={`text-sky-950 text-[22px] xs:text-[32px] ${DanaBold.className} tracking-tight`}>
+                        ما رویاهای شما عزیزان
+                    </h4>
+                    <h4 className={`text-sky-950 text-[22px] xs:text-[32px] ${DanaBold.className} tracking-tight`}>
+                        را خلق و به <span className="text-blue-600">واقعـیت</span> تبدیل میکنیم
+                    </h4>
+                    <p className="text-gray-400 text-[11px] xs:text-[14px] mt-4 mb-6 text-justify xs:leading-8 leading-5">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                        و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال
+                        و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                        رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                        داشت که تمام و دشواری موجود است.
+                    </p>
+                    <div className="flex items-center gap-x-6">
+                        <Link
+                            href="/about"
+                            className="bg-gradient-to-br from-purple-600 to-blue-400 text-white px-3 xs:px-6 rounded-xl py-2 text-[13px]"
+                        >
+                            مشاهده خدمات
+                        </Link>
+                        <div className="flex items-center gap-x-2">
+                            <Image
+                                src="/img/about/Play.png"
+                                className="w-[20px] xs:w-[40px] h-[20px] xs:h-[40px]"
+                                width={1000}
+                                height={1000}
+                                alt="Play Icon"
+                            />
+                            <Link
+                                href=""
+                                className={`text-[11px] xs:text-[14px] ${DanaBold.className} border-b-2 border-b-sky-600`}
+                            >
+                                ویدیو معرفی
+                            </Link>
                         </div>
                     </div>
                 </div>
                 {/* picture */}
-                <div className={'xs:mt-0 mt-12 relative'}>
-                    <Image src={'/img/main/workspace2.png'} className='w-[550px]'
-                           width={1000}
-                           height={1000} alt='Logo'/>
-                    <div
-                        className={'xs:w-[172px] w-[144px] xs:h-auto h-[107px] shadow-2xl absolute top-[65%] left-[0] flex flex-col items-center justify-between p-3 rounded-2xl bg-white/60'}>
-                        <h2 className={'xs:text-[14px] text-[11px] text-blue-600'}>بازدید از شما</h2>
-                        <Image src={'/img/main/Group-21.png'}
-                               className='xs:w-[60px] w-[30px] h-[30px] xs:my-3 xs:h-[50px]'
-                               width={1000}
-                               height={1000} alt='Logo'/>
-                        <h2 className={'xs:text-[14px] text-[11px] text-blue-600'}>به مرز انفجار خواهد رسید</h2>
+                <div className="relative xs:mt-0 mt-12">
+                    <Image
+                        src="/img/main/workspace2.png"
+                        className="w-full xs:w-[550px]"
+                        width={1000}
+                        height={1000}
+                        alt="Workspace"
+                    />
+                    <div className="absolute top-[65%] left-0 flex flex-col items-center justify-between p-3 rounded-2xl bg-white/60 shadow-2xl xs:w-[172px] w-[144px] xs:h-auto h-[107px]">
+                        <h2 className="text-blue-600 text-[11px] xs:text-[14px]">بازدید از شما</h2>
+                        <Image
+                            src="/img/main/Group-21.png"
+                            className="w-[30px] xs:w-[60px] h-[30px] xs:h-[50px] xs:my-3"
+                            width={1000}
+                            height={1000}
+                            alt="Group Icon"
+                        />
+                        <h2 className="text-blue-600 text-[11px] xs:text-[14px]">به مرز انفجار خواهد رسید</h2>
                     </div>
                 </div>
             </section>
             {/* section company */}
-            <section className={'mt-6'}>
-                <h2 className={'xs:text-[16px] text-[13px] text-blue-600 text-center'}>شرکت هایی که به ما اعتماد
-                    کردند!</h2>
-                <div className={'mt-10 flex items-center justify-between'}>
-                    <div className={'flex flex-col items-center justify-centerw-[260px] h-[53px]'}>
-                        <Link href={'/'} className={'block m-auto '}>
-                            <Image src={'/img/main/client-5.png'}
-                                   className='w-auto h-auto opacity-20 hover:opacity-100 transition-all'
-                                   width={1000}
-                                   height={1000} alt='Logo'/>
+            <section className="mt-6 flex flex-col">
+                <h2 className="text-blue-600 text-center text-[13px] xs:text-[16px]">
+                    شرکت هایی که به ما اعتماد کردند!
+                </h2>
+                <div className="mt-10 flex flex-col xs:flex-row items-center justify-center gap-4">
+                    <div className="flex flex-col items-center justify-center w-[100px] xs:w-[260px] h-[53px] mb-10 xs:mb-0">
+                        <Link href="/">
+                            <Image
+                                src="/img/main/client-5.png"
+                                className="opacity-50 hover:opacity-100 transition-all"
+                                width={130}
+                                height={1000}
+                                alt="Logo"
+                            />
                         </Link>
                     </div>
-                    <div
-                        className={'xs:flex flex-col items-center justify-center hidden xs:w-[260px] w-[50%]  h-[53px]'}>
-                        <Link href={'/'} className={'block m-auto '}>
-                            <Image src={'/img/main/clienty-2.png'}
-                                   className='w-auto h-auto opacity-20 hover:opacity-100 transition-all'
-                                   width={1000}
-                                   height={1000} alt='Logo'/>
+                    <div className="flex flex-col items-center justify-center w-[100px] xs:w-[260px] h-[53px]  xs:flex mb-10 xs:mb-0">
+                        <Link href="/">
+                            <Image
+                                src="/img/main/clienty-2.png"
+                                className="opacity-50 hover:opacity-100 transition-all"
+                                width={130}
+                                height={1000}
+                                alt="Logo"
+                            />
                         </Link>
                     </div>
-                    <div
-                        className={'xs:flex flex-col items-center justify-center hidden xs:w-[260px] w-[50%] h-[53px]'}>
-                        <Link href={'/'} className={'block m-auto '}>
-                            <Image src={'/img/main/clienty-3.png'}
-                                   className='w-auto h-auto opacity-20 hover:opacity-100 transition-all'
-                                   width={1000}
-                                   height={1000} alt='Logo'/>
+                    <div className="flex flex-col items-center justify-center w-[100px] xs:w-[260px] h-[53px]  xs:flex mb-10 xs:mb-0">
+                        <Link href="/">
+                            <Image
+                                src="/img/main/clienty-3.png"
+                                className="opacity-50 hover:opacity-100 transition-all"
+                                width={100}
+                                height={1000}
+                                alt="Logo"
+                            />
                         </Link>
                     </div>
-                    <div className={'w-[260px] h-[53px] flex flex-col items-center justify-center '}>
-                        <Link href={'/'} className={'block m-auto '}>
-                            <Image src={'/img/main/clienty-4.png'}
-                                   className='w-auto h-auto opacity-20 hover:opacity-100 transition-all'
-                                   width={1000}
-                                   height={1000} alt='Logo'/>
+                    <div className="flex flex-col items-center justify-center w-[100px] xs:w-[260px] h-[53px] mb-10 xs:mb-0">
+                        <Link href="/">
+                            <Image
+                                src="/img/main/clienty-4.png"
+                                className="opacity-50 hover:opacity-100 transition-all"
+                                width={100}
+                                height={1000}
+                                alt="Logo"
+                            />
                         </Link>
                     </div>
-                    <div className={'w-[260px] h-[53px] xs:flex hidden flex-col items-center justify-center '}>
-                        <Link href={'/'} className={'block m-auto '}>
-                            <Image src={'/img/main/client-1.png'}
-                                   className='w-auto h-auto opacity-20 hover:opacity-100 transition-all'
-                                   width={1000}
-                                   height={1000} alt='Logo'/>
+                    <div className="flex flex-col items-center justify-center w-[100px] xs:w-[260px] h-[53px]  xs:flex">
+                        <Link href="/">
+                            <Image
+                                src="/img/main/client-1.png"
+                                className="opacity-50 hover:opacity-100 transition-all"
+                                width={100}
+                                height={1000}
+                                alt="Logo"
+                            />
                         </Link>
                     </div>
                 </div>
             </section>
             {/* section servicec */}
-            <section className={'xs:flex mt-28 gap-x-10 justify-between items-center'}>
+            <section className={'xs:flex xs:mt-28 mt-20 gap-x-10 justify-between items-center'}>    
                 <div className={'xs:w-[50%] w-full'}>
                     <div>
                         <Link href={'/'}
@@ -136,15 +170,17 @@ export default function page() {
                             تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در
                             شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.
                         </p>
-                        <Link href={'/'}
-                              className={' bg-gradient-to-br from-purple-600 to-blue-400 text-white xs:px-6 px-3 rounded-xl py-2 text-[13px]'}>مشاهده
-                            همه خدمات</Link>
+                        <Link href={'/services'}>
+                            <button className={' bg-gradient-to-br from-purple-600 to-blue-400 text-white xs:px-6 px-3 rounded-xl py-2 text-[13px] transform hover:scale-110 transition hover:duration-200'}>
+                                مشاهده همه خدمات
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className={'xs:w-[50%] xs:mt-0 mt-10 w-full'}>
                     <div className={'flex items-center justify-between gap-x-3'}>
                         <div
-                            className={'w-[50%]  gap-x-3 flex xs:flex-row flex-col items-center hover:text-white justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all'}>
+                            className={'w-[50%]  gap-x-3 flex xs:flex-row flex-col items-center justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all  cursor-pointer hover:text-white '}>
                             <div>
                                 <Image src={'/img/main/13.-Target.png'}
                                        className='xs:h-[57px] h-[36px] xs:w-[160px] w-[36px]'
@@ -153,13 +189,13 @@ export default function page() {
                             </div>
                             <div className={'xs:inline-block flex flex-col items-center'}>
                                 <h4 className={'xs:text-[15px] text-[12px]'}>تبلیغات هدفمند</h4>
-                                <p className={'xs:text-[12px] text-[10px] text-gray-400 hover:text-white text-justify mt-1 '}>لورم
+                                <p className={'xs:text-[12px] text-[10px] text-gray-400 text-justify mt-1 '}>لورم
                                     ایپسوم متن ساختگی با تولید سادگی نامفهوم
                                     از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                             </div>
                         </div>
                         <div
-                            className={'w-[50%] xs:mb-5 gap-x-3 flex xs:flex-row flex-col items-center hover:text-white justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all'}>
+                            className={'w-[50%] xs:mb-5 gap-x-3 flex xs:flex-row flex-col items-center justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all cursor-pointer hover:text-white '}>
                             <div>
                                 <Image src={'/img/main/28.-Upload.png'}
                                        className='xs:h-[57px] h-[36px] xs:w-[160px] w-[36px]'
@@ -168,7 +204,7 @@ export default function page() {
                             </div>
                             <div className={'xs:inline-block flex flex-col items-center'}>
                                 <h4 className={'xs:text-[15px] text-[12px]'}>طراحی سایت شما</h4>
-                                <p className={'xs:text-[12px] text-[10px] text-gray-400 hover:text-white text-justify mt-1 '}>لورم
+                                <p className={'xs:text-[12px] text-[10px] text-gray-400 text-justify mt-1 '}>لورم
                                     ایپسوم متن ساختگی با تولید سادگی نامفهوم
                                     از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                             </div>
@@ -176,7 +212,7 @@ export default function page() {
                     </div>
                     <div className={'flex items-center mt-4 justify-between gap-x-3'}>
                         <div
-                            className={'w-[50%] gap-x-3 flex xs:flex-row flex-col items-center hover:text-white justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all'}>
+                            className={'w-[50%] gap-x-3 flex xs:flex-row flex-col items-center justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all cursor-pointer hover:text-white '}>
                             <div>
                                 <Image src={'/img/main/30.-Palette.png'}
                                        className='xs:h-[57px] h-[36px] xs:w-[160px] w-[36px]'
@@ -185,13 +221,13 @@ export default function page() {
                             </div>
                             <div className={'xs:inline-block flex flex-col items-center'}>
                                 <h4 className={'xs:text-[15px] text-[12px]'}>افزایش رتبه سایت</h4>
-                                <p className={'xs:text-[12px] text-[10px] text-gray-400 hover:text-white text-justify mt-1 '}>لورم
+                                <p className={'xs:text-[12px] text-[10px] text-gray-400 text-justify mt-1 '}>لورم
                                     ایپسوم متن ساختگی با تولید سادگی نامفهوم
                                     از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                             </div>
                         </div>
                         <div
-                            className={'w-[50%] xs:mb-5 gap-x-3 flex xs:flex-row flex-col items-center hover:text-white justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all'}>
+                            className={'w-[50%] xs:mb-5 gap-x-3 flex xs:flex-row flex-col items-center justify-between p-4 bg-white shadow-sm rounded-2xl hover:bg-[#616FFD] transition-all cursor-pointer hover:text-white'}>
                             <div>
                                 <Image src={'/img/main/55.-Briefcase.png'}
                                        className='xs:h-[57px] h-[36px] xs:w-[160px] w-[36px]'
@@ -200,7 +236,7 @@ export default function page() {
                             </div>
                             <div className={'xs:inline-block flex flex-col items-center'}>
                                 <h4 className={'xs:text-[15px] text-[12px]'}>بهینه سازی سرعت</h4>
-                                <p className={'xs:text-[12px] text-[10px] text-gray-400 hover:text-white text-justify mt-1 '}>لورم
+                                <p className={'xs:text-[12px] text-[10px] text-gray-400 text-justify mt-1 '}>لورم
                                     ایپسوم متن ساختگی با تولید سادگی نامفهوم
                                     از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                             </div>
@@ -209,17 +245,21 @@ export default function page() {
                 </div>
             </section>
             {/* section projocts */}
-            <section className={'bg-[#725DF5] mt-28 h-[328px] w-full rounded-3xl p-3'}>
-                <div className={'flex flex-col items-center justify-center mt-3'}>
-                    <Link href={'/'}
-                          className={'xs:text-sm text-xs text-sky-600 bg-[#FECBF8] inline-block m-auto xs:px-5 px-3 py-1 rounded-full'}>نمونه
-                        کار ما</Link>
-                    <h4 className={'xs:text-[20px] text-sm xs:mt-4 mt-2 text-white'}>برخی از نمونه کارهای ما</h4>
+            <section className="bg-[#725DF5] mt-28 w-full rounded-3xl p-3">
+                <div className="flex flex-col items-center justify-center mt-3">
+                    <Link
+                    href={'/'}
+                    className="text-xs xs:text-sm text-sky-600 bg-[#FECBF8] inline-block m-auto px-3 py-1 xs:px-5 rounded-full"
+                    >
+                    نمونه کار ما
+                    </Link>
+                    <h4 className="text-sm xs:text-[20px] text-white mt-2 xs:mt-4">برخی از نمونه کارهای ما</h4>
                 </div>
-                <div className={'w-full xs:block hidden'}>
-                    <Bodymain/>
+                <div className="w-full flex flex-col items-center xs:grid xs:grid-cols-1 gap-4">
+                    <Bodymain />
                 </div>
             </section>
+
             {/* section think */}
             <section className={'xs:flex xs:gap-x-[150px] justify-between items-center xs:mt-32 mt-16'}>
                 {/* tittle */}
@@ -288,9 +328,11 @@ export default function page() {
                         </div>
                     </div>
                     <div className={'flex items-center gap-x-6 mt-6'}>
-                        <Link href={'/'}
-                              className={' bg-gradient-to-br from-purple-600 to-blue-400 text-white xs:px-16 px-14 rounded-xl py-2 text-[13px]'}>مشاهده
-                            خدمات</Link>
+                        <Link href={'/contact-us'}>
+                            <button className={' bg-gradient-to-br from-purple-600 to-blue-400 text-white xs:px-6 px-3 rounded-xl py-2 text-[13px] transform hover:scale-110 transition hover:duration-200'}>
+                                مشاهده خدمات
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 {/* picture */}
